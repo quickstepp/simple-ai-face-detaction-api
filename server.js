@@ -8,10 +8,15 @@ import signin from "./controllers/signin.js";
 import {handleImage, handleApiCall} from "./controllers/image.js";
 import getProfile from "./controllers/profile.js";
 
+process.env.NODE_TLS_REJECT_UNAUTHORIZED = 0;
+
 const db = knex({
     client: 'pg',
     connection: {
-        connectionString : 'postgres://simple_ai_face_detection_db_user:lHN6cHY1VcaOcPcANMEyJ95eWqvUsaoW@dpg-cj4k02a7l0fkkjjqmreg-a/simple_ai_face_detection_db'
+        connectionString : 'postgres://simple_ai_face_detection_db_user:lHN6cHY1VcaOcPcANMEyJ95eWqvUsaoW@dpg-cj4k02a7l0fkkjjqmreg-a/simple_ai_face_detection_db',
+        ssl: {
+            rejectUnauthorized: false
+        }
     }
 });
 
