@@ -11,11 +11,7 @@ import getProfile from "./controllers/profile.js";
 const db = knex({
     client: 'pg',
     connection: {
-        host : 'postgres://simple_ai_face_detection_db_user:lHN6cHY1VcaOcPcANMEyJ95eWqvUsaoW@dpg-cj4k02a7l0fkkjjqmreg-a/simple_ai_face_detection_db',
-        port : 5432,
-        database : 'simple_ai_face_detection_db',
-        user : 'simple_ai_face_detection_db_user',
-        password : 'lHN6cHY1VcaOcPcANMEyJ95eWqvUsaoW'
+        connectionString : 'postgres://simple_ai_face_detection_db_user:lHN6cHY1VcaOcPcANMEyJ95eWqvUsaoW@dpg-cj4k02a7l0fkkjjqmreg-a/simple_ai_face_detection_db'
     }
 });
 
