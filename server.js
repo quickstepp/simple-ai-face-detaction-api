@@ -11,11 +11,11 @@ import getProfile from "./controllers/profile.js";
 const db = knex({
     client: 'pg',
     connection: {
-        host : '127.0.0.1',
+        host : 'postgres://simple_ai_face_detection_db_user:lHN6cHY1VcaOcPcANMEyJ95eWqvUsaoW@dpg-cj4k02a7l0fkkjjqmreg-a/simple_ai_face_detection_db',
         port : 5432,
-        user : 'postgres',
-        password : 'test',
-        database : 'smart-brain'
+        database : 'simple_ai_face_detection_db',
+        user : 'simple_ai_face_detection_db_user',
+        password : 'lHN6cHY1VcaOcPcANMEyJ95eWqvUsaoW'
     }
 });
 
