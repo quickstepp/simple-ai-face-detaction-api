@@ -13,7 +13,7 @@ process.env.NODE_TLS_REJECT_UNAUTHORIZED = 0;
 const db = knex({
     client: 'pg',
     connection: {
-        connectionString : 'postgres://simple_ai_face_detection_db_user:lHN6cHY1VcaOcPcANMEyJ95eWqvUsaoW@dpg-cj4k02a7l0fkkjjqmreg-a/simple_ai_face_detection_db',
+        connectionString : 'postgres://default:jNsPoVy29dGI@ep-royal-paper-98606296.eu-central-1.postgres.vercel-storage.com:5432/verceldb',
         ssl: {
             rejectUnauthorized: false
         }
